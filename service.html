@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>Service</title>
+
+     <!-- The Image in the tab bar -->
+    <link rel="icon" href="images/jumper2.ico" type="image/x-icon" />
+    
+	     <!-- External CSS -->
+	   <link rel="stylesheet" href="external.css">
+	   <!-- Font Awesome is for fonts, which can be used as icons which I used for      the drop down icon in my nav bar -->
+	   <script src="https://use.fontawesome.com/2901339622.js"></script>
+ 
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+   	 <style type="text/css">
+   	
+      /*Wrapper Div */
+          #secondWrapper{
+      margin-left: 12%;
+      margin-top: -3%;
+      }
+
+  /*Buttons for slideshow */
+
+    .backbutton{
+    border: none;
+    position: absolute;
+    top: 7.7%;
+    left: 11.9%;
+    font-size: 70px;
+    width: 58px;
+    height: 540px;
+    color: white;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1));
+    }
+
+    .backbutton:hover{
+    color: #215732;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+    cursor: pointer;
+    }
+
+      .forwardbutton{
+    position: absolute;
+    border: none;
+    top: 7.7%;
+    left: 84.2%;
+    font-size: 70px;
+    width: 58px;
+    height: 540px;
+    color: white;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1));
+      }
+
+      .forwardbutton:hover{
+       color: #215732;
+       background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+      cursor: pointer;
+    }
+
+          .forwardbutton, .backbutton:focus {
+          outline:0;
+            }
+
+        /* */
+
+     	</style>
+
+	    </head>
+	     <body>
+ 	     <!-- Nav bar -->
+    <ul>
+       <li><a href="home.html" id="brand"><b>TAU-PSI</b></a></li>
+       <li><a href="home.html" id="active">HOME</span></a></li>
+       <li class = "dropdown"><a  href="#">WHO WE ARE <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+           <div class= "content">
+           <a href="about.html">ABOUT US</a>
+           <a href="national.html">NATIONAL HISTORY</a>
+           </div>
+          </li>
+        <li><a href="service.html" class="active"><span style="color:#215732;">SERVICE</span></a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="rush.html">RUSH</a></li>
+        <li id="login"><a href="brothers.html" style="color: #C99700;"><i class="fa fa-sign-in" aria-hidden="true"></i> BROTHERS ONLY</a></li>
+    </ul>
+
+    <!-- buttons for slide show -->
+    <button class="backbutton" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="forwardbutton" onclick="plusDivs(+1)">&#10095;</button>
+    
+    <!--First Wrapper, top of page-->
+    <div id="firstWrapper" style="width: 100%;">
+    <center>
+        <!-- Id's and classes must have unique and authentic names -->
+
+         <!-- One -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/service.jpg"  height="540px" width="1100px"><br>
+          <p style=" font-size: 20px;"> The Brothers of ΚΣ and Sisters of ΣΚ in McEwen inspiring students to sign up for  The Walk To End Alzheimer's.
+          </p>
+	      </div>
+
+         <!-- two -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/service2.jpg"  height="540px" width="1100px" >
+          <p style=" font-size: 20px;"> The Brothers of ΚΣ at The Walk To End Alzheimer's. 
+          </p>
+        </div>
+
+        <!-- three -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/service3.jpg"  height="540px" width="1100px" >
+          <p style=" font-size: 20px;"> The Brothers of ΚΣ alongside Sisters of ΣΚ for our first Annual Easter Egg Hunt Event at the President's of Fredonia lawn. 
+          </p>
+        </div>
+
+         <!-- four -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/service4.jpg"  height="540px" width="1100px" >
+         <p style=" font-size: 20px;"> The Brothers of ΚΣ with Dr. Virginia "Ginny" Horvath The President of SUNY Fredonia at our Easter Egg Hunt.
+         </p>
+        </div>
+
+        <!-- five -->
+        <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/service5.jpg"  height="540px" width="1100px" >
+         <p style=" font-size: 20px;"> Brother Engel "Wavy" Figueroa painting a lion on one of the kids that attended the Easter Egg Hunt.
+         </p>
+         </div>
+
+         <!--Six -->
+          <!-- five -->
+        <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/award.png"  height="540px" width="1100px" >
+         <p style=" font-size: 20px;"> In Spring 2016, We proudly accepted this Volunteer Award for having the most community service hours out of every group on Campus!
+         </p>
+         </div>
+        
+        
+    </center>
+
+    <!-- firstWrapper container closing -->
+     </div>
+
+
+    <!-- The wrapper is to control everything a box so it can be displayed in the middle in order to add some style to the page. -->
+	   <div id="secondWrapper" style="width: 1100px;margin-top: 80px;">
+
+   
+    <span><b>
+    <h1 style="color: #215732; font-size: 50px; text-align: center;"> 
+    PHILANTHROPY </h1>
+    </span></b>
+
+    <center>  <!-- philantrophy image -->
+    <img src="images/heroes.png" style="margin-top: -100px">
+    </center>
+
+    <center>
+    <p style=" font-size: 20px; color: black;">
+        Created in 2007, the Kappa Sigma Military Heroes Campaign honors and aids thousands of military veterans and their families in communities throughout the U.S. and Canada. Since its inception, the campaign has donated over $1,000,000 to non-profit organizations who advocate on behalf of servicemen and women and those wounded in combat. The Military Heroes Campaign is Kappa Sigma’s International philanthropy and was designed to honor and aid thousands of wounded military veterans and their families.  The Military Heroes Campaign provides charitable donations to alot of organizations.
+    </p>
+      <br>
+
+      <span><b>
+    <h1 style="color: #215732; font-size: 50px; text-align: center;"> 
+    22 PUSH UP CHALLENGE </h1>
+    </span></b>
+
+     <p style=" font-size: 20px; color: black;"> 
+  Check out our 22 Push-Up Challenge posted below. This event was to raise awareness for the 22 veterans who committ suicide everyday.
+    </p>
+    
+    <!--Youtube Video posted by us Tau-Psi-->
+    <iframe width="100%" height="415" src="https://www.youtube.com/embed/Jc2ZvLjKBLI" frameborder="0" allowfullscreen ></iframe>
+    </center>
+    <br>
+    <br>
+
+    <span><b>
+    <h1 style="color: #215732; font-size: 50px; text-align: center;"> 
+    WANT TO COLLABORATE? </h1>
+    </span></b>
+
+    <center>
+    <p style=" font-size: 20px; color: black; padding-bottom: 60px;" >
+        We love looking for cool stuff to work on, especially if it involves helping out the community. No matter what organization it is that needs assistance; We are always willing to lend a helping hand. To give you a better picture of the groups and individuals we have collabrated with before here are some. The Mayor of Fredonia, the President of SUNY Fredonia, Chautauqua Blind Institute, Alzheimer’s Association, Colleges against cancer, Relay for life, Veterans, Buffalo kids news day and numerous organizations on/off campus. 
+            <br>Please feel to contact us, We can't wait!.  
+    </p>
+    </div>
+     </center>
+
+
+
+
+
+
+    <!-- Slide Show Animation -->
+         <script type="text/javascript">
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n){
+          showDivs(slideIndex += n);
+          }  
+
+          function showDivs(n){
+           var i;
+          var x = document.getElementsByClassName("slideShowOnFleek");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+       } 
+      x[slideIndex-1].style.display = "block";
+       }
+
+    </script>
+
+
+
+
+  
+   
+    </div>
+   <!-- Closing wrapper -->
+
+    <!-- Footer and all the inner tags are for a neat footer -->
+    <div id="footer" >
+
+    <a target="_blank" href= "http://kappasigma.org/"><img src="images/footer.png" style="padding-left: 130px; position: absolute; top: 4px;"></a>
+    <span id="copyright">Copyright © 2017, Kappa Sigma Fraternity</span>
+
+    <a href="#"><span id="contactfooter">CONTACT US</span></a>
+
+    <!-- Social media section left side of footer  -->
+ 
+    <span id="follow"> FOLLOW US ON </span>
+    <a target="_blank" href="https://www.facebook.com/KappaSigmaFredonia/?fref=ts"><span id="facebook"> <i class="fa fa-facebook-square" aria-hidden="true"></i> </span></a>
+    <a target="_blank" href="https://www.instagram.com/kappasigmafred/"><span id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> </span></a>
+    <a target="_blank" href="https://twitter.com/kappasigmafred"><span id="twitter"> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+    <a href="#" id="top" style=" font-size: 36px; position: absolute; 
+    left: 96%; top: 8px;"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <script>
+      // Using Jquery im calling the id TOP that when it is clicked on the front end the arrow sign it will then go up.
+          $('top').click(function(){
+            $('body');
+        
+
+    </script>
+    <!-- closing tag for footer -->
+    </div>
+
+</body>
+</html>

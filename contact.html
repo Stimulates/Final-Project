@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>Contact</title>
+
+     
+     <!-- The Image in the tab bar -->
+    <link rel="icon" href="images/jumper2.ico" type="image/x-icon" />
+
+    <link rel="wavey" href="images/footer.png" type="image/x-icon">
+	     <!-- External CSS -->
+	   <link rel="stylesheet" href="external.css">
+	   <!-- Font Awesome is for fonts, which can be used as icons which I used for      the drop down icon in my nav bar -->
+	   <script src="https://use.fontawesome.com/2901339622.js"></script>
+ 
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+   	 <style type="text/css">
+   	
+    
+            #dan{
+            transition-duration: 0.6s;
+          }
+
+            #dan:hover{
+              transform: scale(1.1);
+            }
+
+            /*Wrapper Div */
+            #Wrapper{
+            margin-left: 12%;
+            margin-top: -3%;
+          }
+ 
+
+          .wavey {
+          width:40%;
+         text-align: left;
+         font-size: 20px;
+          }
+
+        .wavey:focus{
+        font-size:20px;
+        color: solid black;
+        background-color: #215732;
+        outline: solid #cc0000;
+         }
+
+          /*message box*/
+        textarea{
+        font-size:20px;
+        max-width: 600px;
+        max-height: 200px;
+
+        }
+   
+        textarea:focus{
+        background-color: #215732;
+        outline: solid #cc0000;
+          }
+
+          textarea:focus, input:focus {
+          color: #C99700;
+            }
+
+        .fire{
+        color: #cc0000;
+        } 
+
+      button:hover{
+        background: #215732;
+        outline: solid #cc0000;
+         color: #C99700;
+      }
+
+      #profilepicname:hover{
+          color: #C99700;
+      }
+
+      .fa-instagram, .fa-twitter-square,.fa-facebook-square{ 
+      transition-duration:0.6s;
+    }
+    .fa-instagram:hover{
+      transform: scale(1.3);
+    }
+    .fa-twitter-square:hover{
+      transform: scale(1.3);
+    }
+    .fa-facebook-square:hover{
+      transform: scale(1.3);
+    }
+
+
+     	</style>
+
+	    </head>
+	     <body>
+ 	     <!-- Nav bar -->
+    <ul style="">
+       <li><a href="home.html" id="brand"><b>TAU-PSI</b></a></li>
+       <li><a href="home.html" >HOME</span></a></li>
+       <li class = "dropdown"><a  href="#">WHO WE ARE <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+           <div class= "content">
+           <a href="about.html">ABOUT US</a>
+           <a href="national.html">NATIONAL HISTORY</a>
+           </div>
+          </li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html" class="active"><span style="color:#215732;">CONTACT</a></span></li>
+        <li><a href="rush.html">RUSH</a></li>
+        <li id="login"><a href="brothers.html" style="color: #C99700;"><i class="fa fa-sign-in" aria-hidden="true"></i> BROTHERS ONLY</a></li>
+    </ul>
+
+
+    <!-- Middle of the page -->
+
+
+    <!-- The wrapper is to control everything a box so it can be displayed in the middle in order to add some style to the page. -->
+     <div id="Wrapper" style="width: 1060px;margin-top: -20px;">
+
+   
+    <span><b>
+    <h1 style="color: #215732; font-size: 50px; text-align: center; position: relative; left: 200px;"> 
+    LET'S TALK! </h1>
+    </span></b>
+
+    <center>  <!-- philantrophy image -->
+    <img id="dan" src="images/dan.png" width="300px" height="300px" style="position: relative; right: 35.3%; border-radius: 20px;">
+    </center>
+
+    <!-- Form -->
+
+    
+    <form style="overflow: hidden;position: absolute; left: 600px; top: 160px; margin-bottom: -50px;">
+      <h2>First Name <span class="fire">*</span></h2>
+      <input class="wavey" name="FullName" placeholder="Insert First Name" required="" type="text">
+
+      
+      <h2 style=" position: relative; top: -102px; left: 350px;"> Last Name <span class="fire">*</span></h2>
+      <input class="wavey" style="position: relative; top: -102px; left: 350px;display: inline;"  name="FullName" placeholder="Insert Last Name" required="" type="text" style="">
+
+
+
+      <h2 style="position: relative; top: -102px;">Email <span class="fire">*</span></h2>
+      <input style="position: relative; top: -100px;" class="wavey" name="Email" placeholder="Insert Email" required="" type="email" width="900px">
+
+      
+      <h2 style=" position: relative; top: -200px; left: 350px;"> Phone <span class="fire">*</span></h2>
+      <input class="wavey" style="position: relative; top: -200px; left: 350px;display: inline;"  name="Number" placeholder="Insert Phone Number" required="" type="text" style="">
+
+      <h2 style="position: relative; top: -170px;">Your Message <span class="fire">*</span></h2>
+      <textarea style="position: relative; top: -170px;" cols="60" placeholder="Insert Message" rows="10" required=""></textarea><br>
+      <br>
+
+      <h5 style="position: absolute; font-size: 14px; top: 500px;"><span class="fire">*</span> Required Field</h5>
+
+      <button onclick="alert('Thank you for your submission, We will respond within 48 hours.')" type="submit" style="position:absolute;  top: 530px; left: 260px;"><span style="font-size: 18px; color: #C99700; "> <i class="fa fa-paper-plane-o" aria-hidden="true"></i></span><span style="font-size: 22px"> Submit</span></button>
+
+    </form>
+
+
+    <!-- Dan's name etc..-->
+    <b><h1 id="profilepicname"style="position: relative;top: -18px; left: 60px;">Daniel Griffin</h1>
+
+    <h2 style="position: relative;top: -50px; left: 60px;">Recruitment Chair</h2>
+
+    <h3 style="position: relative;top: -70px; left: 90px;">(716)-861-6048</h3>
+    </b>
+
+    <!-- Dan's social media -->
+    <span style="position: absolute; font-size: 36px; top:570px; left: 266px;" >
+      <a target="_blank" href="https://www.facebook.com/daniel.griffin.391?fref=ts"><i class="fa fa-facebook-square" aria-hidden="true" style="color: #4060A5;"></i></a>
+    <a target="_blank" href="https://www.instagram.com/thedangriffin/"><i class="fa fa-instagram" aria-hidden="true" style="color: #cd486b; "></i></a>
+    <a target="_blank" href="https://twitter.com/dpgriffin7"> <i class="fa fa-twitter-square" aria-hidden="true" style="color: #00ABE3"></i></a>
+    </span>
+
+
+
+
+  <!--Wrapper Closing -->
+    </div>
+
+
+
+
+
+   
+
+    <!-- Footer and all the inner tags are for a neat footer -->
+    <div id="footer">
+
+    <a target="_blank" href= "http://kappasigma.org/"><img src="images/footer.png" style="padding-left: 130px; position: absolute; top: 4px;"></a>
+    <span id="copyright">Copyright © 2017, Kappa Sigma Fraternity</span>
+
+    <a href="contact.html" id="contactfooter"><span  style="color: #215732;">CONTACT US</span></a>
+
+    <!-- Social media section left side of footer  -->
+ 
+    <span id="follow"> FOLLOW US ON </span>
+    <a target="_blank" href="https://www.facebook.com/KappaSigmaFredonia/?fref=ts"><span id="facebook"> <i class="fa fa-facebook-square" aria-hidden="true"></i> </span></a>
+    <a target="_blank" href="https://www.instagram.com/kappasigmafred/"><span id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> </span></a>
+    <a target="_blank" href="https://twitter.com/kappasigmafred"><span id="twitter"> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+    
+
+    <!-- closing tag for footer -->
+    </div>
+
+</body>
+</html>

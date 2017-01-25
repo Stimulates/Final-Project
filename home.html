@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- The Image in the tab bar -->
+    <link rel="icon" href="images/jumper.ico" type="image/x-icon">
+    
+    <!-- Extrnal CSS -->
+    <link rel="stylesheet" href="external.css">
+    <!-- Font Awesome is for fonts, which can be used as icons which I used for the drop down icon in my nav bar -->
+    <script src="https://use.fontawesome.com/2901339622.js"></script>
+ 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <style type="text/css">
+
+        body, html{
+        width: 100%;
+        margin:0%;
+          }
+
+        body {
+        background-color: #FAEBD7;
+        font-family: Helvetica; /*just in case  */ 
+        font-family: 'Crimson Text', serif;
+        margin: 0px;
+        padding: 0px;
+     }
+
+    /* Nav Bar beings here */
+        ul li{
+            display:inline;
+            list-style: none;
+        }
+        ul{
+            background-color: black;
+            margin: 0;
+            position: relative;
+
+        }
+        li a{
+            display:inline-block;
+            color:white;
+            text-align:center;
+            font-size: 20px;
+            padding:14px 16px 12px 10px;
+            margin-bottom: -2px;
+            text-decoration:none;
+            margin-top: -10px;
+        }
+        .dropdown{
+            display:inline-block;
+            margin-left: -1px;
+
+        }
+
+        li a:hover, .dropdown:hover{
+            color: #cc0000;
+
+        }
+
+        .content{
+            display:none;
+            position:absolute;
+            margin-top: 0px;
+            margin-left: 0px;
+            background-color: black;
+            background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+            box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+            .content a{ 
+            color: white;
+            padding: 10px 4px;
+            display: block;
+            text-align:left;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .dropdown:hover .content{
+            display:block;
+        }
+
+        #brand{
+            font-size: 30px;
+            margin-left: -40px;
+            color: #C99700;
+        }
+
+        .active{
+            text-decoration: underline;
+            color: #cc0000;
+            font-size: 20px;
+        }
+
+        #login{
+            float: right;
+            margin-top: 10px;
+
+        }
+
+        /* Nav Bar ends here*/
+
+        /*Footer and inner footer begins here */
+        #footer {
+        background:black;
+        position:fixed; 
+        height:62px;
+        bottom:0px;
+        width:100%;
+        }
+
+        /* left side of the footer */
+        #copyright{
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 180px;
+        }
+
+        #copyright:hover{
+        color: #cc0000;
+        }
+
+        /* middle of the footer */
+        #contactfooter{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: absolute;
+            left: 47.2%;
+            top: 18px;
+        }
+
+        #contactfooter:hover {
+            color: #cc0000;
+        }
+
+        /* Social Media Part of the Footer (Right Side) */
+        #facebook{
+            color: white;
+            font-size: 36px;
+            position: absolute;
+            left: 82%;
+            top: 6px;
+        }
+
+        #facebook:hover {
+            color: #4060A5;
+        }
+
+        #instagram{
+            color: white;
+            font-size: 36px;
+            position: absolute;
+            left: 85%;
+            top: 6px;
+        }
+
+        #instagram:hover{
+            color:  #cd486b ;
+        }
+
+        #twitter{
+            color: white;
+            font-size: 36px;
+            position: absolute;
+            left: 88%;
+            top: 6px;
+        }
+
+        #twitter:hover{
+            color: #00ABE3;
+        }
+
+        #follow{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 71%;
+            top: 18px;
+        }
+        #follow:hover{
+        color: #cc0000;
+        }
+
+        /* Starting from the top of the page */
+        #kappasigma{
+            position: absolute;
+            top: 200px;
+            left: 6%;
+            font-size: 130px;
+            color: white;
+        }
+
+        
+        #chapter{
+            position: absolute;
+            color: #C99700;
+            top: 360px;
+            left: 11%;
+            font-size: 40px;
+        }
+
+
+
+    </style>
+    </head>
+
+    <body>
+    <!-- Basically I wanted a Nav bar to have a brand name aka Tau-Psi so it can stand out no logo is placed next to it because the logo would be in the footer, this nav bar will require different id's and classes because it's going to be detailed differently acording to the current page along with the inline styles; which will correct what is active on each different page so the user will know what page (S)he is on. -->
+    
+    <!-- Nav bar.. basically it has a div inside the drop down, the div is id because the whole point of drop down menu is by default we see the navbar and not the drop down so I made it display none, and when I hover it has display block in order to make it reappear. --> 
+    <ul>
+    <!-- The <i class = " fa" is the code for the font awesome media icons-->
+        <li><a href="home.html" id="brand"><b>TAU-PSI</b></a></li>
+        <li><a href="home.html" class="active"><span style="color:#215732;">HOME</span></a></li>
+        <li class = "dropdown"><a  href="#">WHO WE ARE <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <div class= "content">
+           <a href="about.html">ABOUT US</a>
+           <a href="national.html">NATIONAL HISTORY</a>
+           </div>
+         </li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="rush.html">RUSH</a></li>
+        <li id="login"><a href="brothers.html" style="color: #C99700;"><i class="fa fa-sign-in" aria-hidden="true"></i> BROTHERS ONLY</a></li>
+    </ul>
+    <!-- Nav bar ends -->
+
+    <!-- header box -->
+     <div id="headerbox" style="background:#215732; width: 100%; padding-bottom: 50%; ">
+      <span id="kappasigma">KAPPA SIGMA</span>
+        <span id="chapter">THE TAU-PSI CHAPTER AT FREDONIA</span>
+        <img id="nationpic" src="images/ksignation.png" style="position: absolute; left: 64%; 
+        top: 150px;">
+
+        <!--header box end-->
+     </div>
+
+    <center>
+    <!--Container -->
+<div id="firstWrapper" style="width: 1100px;">
+    
+    <!-- welcome sign -->
+    <span> 
+    <h1 style="color: #215732; font-size: 50px; text-align: center; padding-top: 30px;"><b> WELCOME TO OUR CHAPTER </b></h1>
+    </span>
+
+        <p style=" font-size: 20px; color: black;">
+       TAU-PSI, founded in 2016, has a membership of strong dedicated gentlemen. Every brother of Kappa Sigma is unique as each person brings something new to the group. Throughout our time as Kappa Sigma gentlemen we have found friendships that will last a lifetime and have learned skills that will make us revolutionary leaders of today and tomorrow. We have an amazing brotherhood, and are always looking forward to expanding our friendship and loyalty to others. We invite you to explore our website to discover what the brotherhood of the Kappa Sigma Fraternity is all about!
+        </p>
+       
+    <!-- mission statement -->
+     <span>
+    <h1 style="color:  #C99700; font-size: 50px;
+     text-align: center;margin-bottom: -10px; padding-top: 30px;">
+     <b> OUR MISSION </b></h1></span><br>
+
+
+     <!-- Four pillars -->
+     <span style="color: #215732; font-size: 40px;
+     text-align:center;">Fellowship<span style="color: black">&bullet;</span>Leadership<span style="color: black">&bullet;</span>Scholarship<span style="color: black">&bullet;</span>Service
+     </span>
+
+
+     <center>
+     <h1 style="color: #cc0000; font-size: 40px;
+     text-align: center; padding-top: 30px;">
+     <b> FELLOWSHIP </b></h1></span>
+
+     <span style=" font-size: 20px; color: black;"> Want to get more from your college experience? Kappa Sigma makes it happen. Joining Kappa Sigma provides opportunities for fellowship, fun, and personal growth that you simply can’t get elsewhere. Over 280,000 men have joined and enjoyed the unmatched experiences, involvement, and lifelong brotherhood that Kappa Sigma offers. There is no secret…our goal is to build better men.
+
+    </span>
+
+    <h1 style="color: #cc0000; font-size: 40px;
+     text-align: center; padding-top: 30px;">
+     <b> LEADERSHIP </b></h1></span>
+
+     <span style=" font-size: 20px; color: black;"> Take the lead. In Kappa Sigma, brothers learn to get involved in their communities and take the lead when something needs to be done. Countless brothers, including senators, governors and CEOs, have said Kappa Sigma gave them the leadership skills they needed to succeed.
+    </span>
+
+    <h1 style="color: #cc0000; font-size: 40px;
+     text-align: center; padding-top: 30px;">
+     <b> SCHOLARSHIP </b></h1></span>
+
+      <span style=" font-size: 20px; color: black;"> You’re in college for an education. From its earliest beginnings in Renaissance Italy, Kappa Sigma has promoted scholarships among its members. Since its inception, over $4.5 million in scholarships have been awarded by the Kappa Sigma Endowment Fund to brothers who excel in academics, campus involvement, and leadership. At the chapter level, brothers help you learn about the campus, provide advice on professors and classes, and help you study for those important assignments.
+    </span>
+
+    <h1 style="color: #cc0000; font-size: 40px;
+     text-align: center; padding-top: 30px">
+     <b> SERVICE </b></h1></span>
+
+     <span style=" font-size: 20px; color: black; padding-bottom: 80px;"> Helping others is part of being a Kappa Sigma. Brothers spend thousands of hours working in their communities and raise thousands of dollars for worthy causes each year. From organizing park clean-ups to serving as Big Brothers to organizing charity rock concerts, Kappa Sigmas work hard for their causes. College is fun, but only service gives you the great feeling of knowing you’ve helped someone and made a difference.
+    </span>
+
+ 
+
+    <h1 style="color: #C99700; font-size: 50px;
+     text-align: center; padding-top: 30px;">
+     <b> CHAPTER NEWS </b></h1></span>
+
+    <div id="twitterBox" style=" padding-bottom: 100px;">
+
+     <!-- Twitter's own embedded to website code -->
+        <a class="twitter-timeline" data-lang="en" data-width="550" data-height="500" data-theme="dark" data-link-color="#C99700" href="https://twitter.com/KappaSigmaFred">Tweets by KappaSigmaFred</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+</div>
+<!--First Wrapper Closing -->    
+    </div>
+    </center> 
+    
+
+
+
+
+
+
+
+
+    <!-- footer and all the inner tags are for a neat footer -->
+    <div id="footer" >
+
+    <a target="_blank" href= "http://kappasigma.org/"><img src="images/footer.png" style="padding-left: 130px; position: absolute; top: 4px;"></a>
+    <span id="copyright">Copyright © 2017, Kappa Sigma Fraternity</span>
+
+    <a href="#"><span id="contactfooter">CONTACT US</span></a>
+
+    <!-- Social media section left side of footer  -->
+ 
+    <span id="follow"> FOLLOW US ON </span>
+    <a target="_blank" href="https://www.facebook.com/KappaSigmaFredonia/?fref=ts"><span id="facebook"> 
+    <!-- This is where font awesome is used --> 
+    <i class="fa fa-facebook-square" aria-hidden="true"></i> </span></a>
+
+    <a target="_blank" href="https://www.instagram.com/kappasigmafred/"><span id="instagram">
+    <!-- This is where font awesome is used -->
+    <i class="fa fa-instagram" aria-hidden="true"></i> </span></a>
+
+    <a target="_blank" href="https://twitter.com/kappasigmafred"><span id="twitter"> 
+     <!-- This is where font awesome is used -->
+    <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+     <a href="#" id="top" style=" font-size: 36px; position: absolute; 
+    left: 96%; top: 8px;"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <script>
+      // Using Jquery im calling the id TOP that when it is clicked on the front end the arrow sign it will then go up.
+          $('top').click(function(){
+            $('body');
+        
+
+    </script>
+    <script>console.log('Rush Kappa Sigma')</script>
+
+    <!-- closing tag for footer -->
+    </div>
+
+
+</body>
+</html>

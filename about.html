@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>About Us</title>
+     
+    <!-- The Image in the tab bar -->
+    <link rel="icon" href="images/jumper2.ico" type="image/x-icon" />
+	     <!-- External CSS -->
+	   <link rel="stylesheet" href="external.css">
+	   <!-- Font Awesome is for fonts, which can be used as icons which I used for      the drop down icon in my nav bar -->
+	   <script src="https://use.fontawesome.com/2901339622.js"></script>
+ 
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+   	 <style type="text/css">
+   	
+      /*Wrapper Div */
+          #secondWrapper{
+      margin-left: 12%;
+      margin-top: -3%;
+      }
+
+  /*Buttons for slideshow */
+
+    .backbutton{
+    border: none;
+    position: absolute;
+    top: 7.7%;
+    left: 11.9%;
+    font-size: 70px;
+    width: 58px;
+    height: 540px;
+    color: white;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1));
+    }
+
+    .backbutton:hover{
+    color: #215732;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+    cursor: pointer;
+    }
+
+      .forwardbutton{
+    position: absolute;
+    border: none;
+    top: 7.7%;
+    left: 84.2%;
+    font-size: 70px;
+    width: 58px;
+    height: 540px;
+    color: white;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.1));
+      }
+
+      .forwardbutton:hover{
+       color: #215732;
+       background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+      cursor: pointer;
+    }
+
+          .forwardbutton, .backbutton:focus {
+          outline:0;
+            }
+
+        .XmenFirstClass{
+          color: black;
+        }
+
+          .XmenFirstClass:hover{
+            color: #C99700;
+         }
+
+         .XmenFirstClass2{
+          color: #7e7e7e
+         }
+
+         .XmenFirstClass2:hover{
+            color: #C99700;
+         }
+
+    
+
+     	</style>
+
+	    </head>
+	     <body>
+ 	     <!-- Nav bar -->
+    <ul>
+       <li><a href="home.html" id="brand"><b>TAU-PSI</b></a></li>
+       <li><a href="home.html" id="active">HOME</span></a></li>
+       <li class = "dropdown"><a  href="#" class="active"><span style="color:#215732;">WHO WE ARE <i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+           <div class= "content">
+           <a href="about.html"><span style="color:#215732;">ABOUT US</a></span>
+           <a href="national.html">NATIONAL HISTORY</a>
+           </div>
+          </li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="rush.html">RUSH</a></li>
+        <li id="login"><a href="brothers.html" style="color: #C99700;"><i class="fa fa-sign-in" aria-hidden="true"></i> BROTHERS ONLY</a></li>
+    </ul>
+
+    <!-- buttons for slide show -->
+    <button class="backbutton" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="forwardbutton" onclick="plusDivs(+1)">&#10095;</button>
+    
+    <!--First Wrapper, top of page-->
+    <div id="firstWrapper" style="width: 100%;">
+    <center>
+
+        <!-- Id's and classes must have unique and authentic names -->
+         <!-- One -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/about1.jpg"  height="540px" width="1100px"><br>
+	      </div>
+
+          <!-- two -->
+          <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/about3.jpg"  height="540px" width="1100px" >
+         </div>
+
+         <!-- three -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/rush2.jpg"  height="540px" width="1100px">
+        </div>
+
+        <!-- four -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/about10.jpg"  height="540px" width="1100px" >
+        </div>
+
+         <!-- five -->
+         <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/about11.jpg"  height="540px" width="1100px" >
+        </div>
+
+        <!-- six -->
+        <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/about2.jpg"  height="540px" width="1100px" >
+         </div>
+
+         <!-- seven -->
+        <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/wish.jpg"  height="540px" width="1100px" >
+         </div>
+
+          <!-- eight -->
+        <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/steve.jpg"  height="540px" width="1100px" >
+         </div>
+
+         <!-- MAKE SURE IT'S THE LAST IMAGE -->
+        <div class="slideShowOnFleek" style=" width: 100%;">  
+         <img src="images/trophies.jpg"  height="540px" width="1100px" >
+         </div>
+
+        
+
+        
+    </center>
+
+    <!-- firstWrapper container closing -->
+     </div>
+
+
+    <!-- The wrapper is to control everything a box so it can be displayed in the middle in order to add some style to the page. -->
+	   <div id="secondWrapper" style="width: 1100px;margin-top: -40px;">
+
+   
+    <span><b>
+    <h1 style="color: #7e7e7e; font-size: 50px; text-align: center; padding-left: 26px;"> 
+    ABOUT US </h1>
+    </span></b>
+
+    <center>
+    <p style=" font-size: 20px; margin-top: -20px; margin-bottom: -2px;">
+        On Saturday April 23,2016 56 members were installed into the Tau-Psi chapter of Kappa Sigma at Fredonia State University. The members of Tau-Psi have already completed over 2,000 hours and raised thousands of dollars for A Greater Cause. This local community service supported many charitable organizations and is a great representation of the core values of Kappa Sigma. <br><br>
+
+        Kappa Sigma is the largest fraternity at Fredonia State, has the most community service hours than any other group on campus, and has developed a great reputation with all on campus. In a exactly a year Tau-Psi went from a Colony to a successful Chapter of Kappa Sigma.&#160;&#160; We are very competitive in sports and academics as well. We  won Greek Week in our first appearance. We have the largest cumulative GPA than any other Fraternity at Fredonia. We have multiple Intramural's Awards. It was a long road to success but the brothers were determined to fullfill every task at hand. Our journey continues even though it's lonely on the top, we strive to remain on the top!
+    </p>
+    </center>
+    <br>
+
+    <center>
+    <span><b>
+    <h1 style="color: #C99700; font-size: 50px;  text-align: center; position: relative;"> 
+    THE FIRST EXECUTIVE COMMITTEE </h1>
+    </span></b>
+    </center>
+
+    <center>
+    <table style="width: 1100px;">
+      <tr>
+      <td>
+      <img src="images/joelThumb.png" id="joel" width="200px" style="padding-right: 20px;">
+      <img src="images/NickBThumb.png" id="nick" width="200px" style="padding-right: 20px">
+      <img src="images/ArcoThumb.png" id="nickA" width="200px" style="padding-right: 20px">
+      <img src="images/MikeQThumb.png" id="mike" width="200px" style="padding-right: 19px">
+      <img src="images/LeoThumb.png" id="leon" width="200px">
+      </td>
+      </tr>
+      <td>
+        <b>
+         <a target="_blank" href="https://www.linkedin.com/in/joelisaelrosario">
+          <span  class="XmenFirstClass" style="font-size: 20px; padding-left:  50px;">Joel Rosario</span></a>
+          <a target="_blank" href="https://www.linkedin.com/in/nicholas-burdick-79000b121"><span class="XmenFirstClass" style="font-size: 20px; padding-left:  106px;">Nicholas Burdick</span></a>
+          <a target="_blank" href="https://twitter.com/NickArcoraci"><span class="XmenFirstClass" style="font-size: 20px; padding-left:  90px;">Nicholas Arcoraci</span></a>
+          <a target="_blank" href="https://www.linkedin.com/in/michael-querrieo-68461910a"><span class="XmenFirstClass" style="font-size: 20px;padding-left: 80px;">Michael Querrieo</span></a>
+          <a target="_blank" href="https://www.linkedin.com/in/leon-vanburch-13a87691"><span class="XmenFirstClass" style="font-size: 20px;padding-left: 88px;">Leon Vanburch</span></a>
+        </b>
+      </td>      
+    </table>
+    </center>
+
+
+
+    <div style="padding-top: 60px; display: flex;">
+    <img id= "hoverpic" src="images/joelThumb.png" height="200px" width="260px"  style="margin-right:10px; position: relative; top: 20px; border-radius: 20px; ">
+    <p style=" font-size: 20px; flex: 1;"><b><a target="_blank" href="https://www.linkedin.com/in/joelisaelrosario"><span class="XmenFirstClass2" style="font-size: 22px;">First Grand Master Joel "Jumper" Rosario</span></a></b> was born May 6,1993. He graduated on the dean's list with a bachelors degree in finance. Joel was the main reason why Kappa Sigma came to Fredonia State. As a transfer student from Finger Lakes Community College, he wanted to be apart of Greek Life but none of the fraternities at Fredonia State had the values and reputation he was striving for. He did research and found Kappa Sigma as THE FRATERNITY, from that moment he made a committment to himself that he'll do anything it takes to make Kappa Sigma be in Fredonia and become the standard of what a real Fraternity is.
+    </p>
+    </div>
+
+
+    <div style="padding-top: 100px; display: flex;">
+    <img src="images/NickBThumb.png"  height="200px" width="260px" style="margin-right:10px; position: relative; top: 0px; border-radius: 20px ">
+    <p style=" font-size: 20px; flex: 1;"><b>
+    <a target="_blank" href="https://www.linkedin.com/in/nicholas-burdick-79000b121"><span class="XmenFirstClass2" style="font-size: 22px;">First Grand Procurator Nicholas Burdick</span></a></b> was born September 30th, 1995 in Dunkirk NY. He is from Fredonia New York. He has been apart of Kappa Sigma since his freshman year of college, way back when Tau-Psi was still a colony. He is now the Grand Procurator of Kappa Sigma. Outside of Kappa Sigma he is a student ambassador, Residental Assistant, Assistant Treasurer of Enactus, and a duel major in Finance and History.
+    </p>
+    </div>
+
+    <div  style="padding-top: 100px; display: flex;">
+    <img src="images/ArcoThumb.png"  height="200px" width="260px" style="margin-right:10px; position: relative; top: 0px; border-radius: 20px ">
+    <p style=" font-size: 20px; flex: 1;"><b>
+    <a target="_blank" href="https://twitter.com/NickArcoraci">
+    <span class="XmenFirstClass2" style="font-size: 22px;">First Grand Master of Ceremonies Nicholas Arcoraci</span></a></b> was born September 30th, 1995 in Dunkirk NY. He is from Fredonia New York. He has been apart of Kappa Sigma since his freshman year of college, way back when Tau-Psi was still a colony. He is now the Grand Procurator of Kappa Sigma. Outside of Kappa Sigma he is a student ambassador, Residental Assistant, Assistant treasurer of Enactus, and a duel major in Finance and History.
+    </p>
+    </div>
+
+    <div style="padding-top: 100px; display: flex;">
+    <img src="images/MikeQThumb.png"  height="200px" width="260px" style="margin-right:10px; position: relative; top: 0px; border-radius: 20px ">
+    <p style=" font-size: 20px; flex: 1;"><b> <a target="_blank" href="https://www.linkedin.com/in/michael-querrieo-68461910a"><span class="XmenFirstClass2" style="font-size: 22px;">First Grand Treasurer Michael "The Goat" Querrieo</span></a></b> was born Oct 29,1993. Michael was the prime example of a scholar. He majored in Accounting and graduated with a 3.98 GPA. When Michael was first introduced to Kappa Sigma he was hesistant because of the reputation fraternities had in Fredonia, but Kappa Sigma was new and he realized he had the opportunity to be apart of an organization that had no negative stigma which still doesn't to this day. Michael quoted "Kappa Sigma helped me meet new people, branch out of my comfort zone and prepare for the real world".
+    </p>
+    </div>
+
+    <div  style="padding-top: 80px; display: flex; padding-bottom: 80px;">
+    <img src="images/LeoThumb.png" height="200px" width="260px" style="margin-right:10px; position: relative; top: 20px; border-radius: 20px ">
+    <p style=" font-size: 20px; flex: 1;"><b> <a target="_blank" href="https://www.linkedin.com/in/leon-vanburch-13a87691"><span class="XmenFirstClass2" style="font-size: 22px;">First Grand Scribe Leon St James Vanburch </span></a></b> was born on January 1st 1995 in Queens NY.  He would later spend most of his years growing up,in Valley Stream Long Island. Leon studied music industry in the Sate University of New York at Fredonia.  During his spring semester sophomore year he found the chance to helming create something great in Fredonia, and joined the Kappa Sigma colony, where he became the first official Grand Scribe. After a year of his hard work as Scribe, Leon would later spend his senior year of college as the Awards Chair. Leon would then go on and create the first official awards program that the fraternity uses to this day.
+    </p>
+    </div>
+
+
+
+
+  
+
+    <!-- Slide Show Animation -->
+         <script type="text/javascript">
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n){
+          showDivs(slideIndex += n);
+          }  
+
+          function showDivs(n){
+           var i;
+          var x = document.getElementsByClassName("slideShowOnFleek");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+       } 
+      x[slideIndex-1].style.display = "block";
+       }
+
+    // slideshow on fleek end
+    </script>
+
+
+  
+   
+    </div>
+   <!-- Closing wrapper -->
+
+    <!-- Footer and all the inner tags are for a neat footer -->
+    <div id="footer" >
+
+    <a target="_blank" href= "http://kappasigma.org/"><img src="images/footer.png" style="padding-left: 130px; position: absolute; top: 4px;"></a>
+    <span id="copyright">Copyright © 2017, Kappa Sigma Fraternity</span>
+
+    <a href="#"><span id="contactfooter">CONTACT US</span></a>
+
+    <!-- Social media section left side of footer  -->
+ 
+    <span id="follow"> FOLLOW US ON </span>
+    <a target="_blank" href="https://www.facebook.com/KappaSigmaFredonia/?fref=ts"><span id="facebook"> <i class="fa fa-facebook-square" aria-hidden="true"></i> </span></a>
+    <a target="_blank" href="https://www.instagram.com/kappasigmafred/"><span id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> </span></a>
+    <a target="_blank" href="https://twitter.com/kappasigmafred"><span id="twitter"> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+    <a href="#" id="top" style=" font-size: 36px; position: absolute; 
+    left: 96%; top: 8px;"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <script>
+      // Using Jquery im calling the id TOP that when it is clicked on the front end the arrow sign it will then go up.
+          $('top').click(function(){
+            $('body');
+        
+
+    </script>
+    <!-- closing tag for footer -->
+    </div>
+
+</body>
+</html>

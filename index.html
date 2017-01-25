@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TAU-PSI</title>
+
+
+      <!-- Hope you enoy my presentation, thank you. -->
+
+
+    <!-- The Image in the tab bar -->
+    <link rel="icon" href="images/jumper2.ico" type="image/x-icon" />
+
+    <!--external style sheet -->
+  <link rel="stylesheet" href="external.css">
+  <!--goole font -->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <style>
+
+    html{
+      cursor: url("images/footer.png"), auto;
+    }
+
+     /* Fraternity Logo */
+     #crest{
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -100px;
+        left: -260px; 
+     }
+
+     /* Button */
+     #enter {
+        border: 0px outset #C99700;
+        height:100px;
+        width:149.9px;
+        font-size: 40px;
+        color: white;
+        background: gold;
+        display: inline-block;
+         position: fixed;
+         top: 43.4%;
+         left: 46.7%;
+         display: none;
+          animation: glowing 1200ms infinite;
+          transform: rotate(1deg);
+        }
+
+     #enter:hover{
+      cursor: pointer;
+     }
+
+     #enter:focus{
+      outline: 0;
+     }
+
+     /* div tag that has Kappa Sigma & crest inside */
+      #movement{
+          position: absolute;
+          top:30px;
+          left: 410px;
+          width: 1000px;
+          height: 200px;
+      }
+
+      #ksig{
+        position: absolute;
+        top: 10px;
+        margin-left: -122px;
+        font-size: 60px;
+        color: white;
+        background: solid black;
+          background: -moz-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.2)); 
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,.1), rgba(0,0,0,.2));
+
+     }
+
+     /* Key frames glowing work in 3 parts so I used it to grab the users attention of what to click to proceed. put a dark as 0 and 100% because if you put 3 individual colors it wouldn't look right so workin with 2 it best, 50% should be bright to make it seem like the button is glowing. */
+        @keyframes glowing {
+              0% {
+               background-color: #C99700; box-shadow: 0 0 90px #C99700; 
+              }
+
+           50% { 
+            background-color: #f8d211; box-shadow: 0 0 90px #f8d211;
+             }
+
+             100% { 
+              background-color:#C99700 ; box-shadow: 0 0 90px #C99700;
+               }
+            
+     </style>
+
+</head>
+<body>
+
+     <!-- calling the function work() to work as soon as the page loads -->
+     <body onload=" work();"> 
+    <!-- Focusing the Image as the center of attention -->
+     <div id="background">
+     <img src="images/taupsi.png" width="100%" height="100%" style="position: absolute;">
+     </div>
+
+    <div id="movement">
+    <div id="crest"  width="200px"; height="20px;">
+        <img src="images/blend.png" width="600px">
+    </div>
+    <span id="ksig"><b>KAPPA SIGMA THE <span style="color:#C99700;">TAU-PSI</span> CHAPTER<b></span>
+    </div>
+
+
+    <!-- enters to start the users experience -->
+    <a href="home.html"><button id="enter"><b>ENTER<b></button></a>
+  
+
+    <script>
+
+        function work() {
+          /* moving first span from left of the page to its absolute position */
+        var elem = document.getElementById("ksig");
+        var wavey = document.getElementById("crest");
+        var pos = -1400;
+        var id = setInterval(frame, .1);
+        function frame() {
+            if (pos == -50) {
+                clearInterval(id);
+            } else {
+              pos++;
+              elem.style.left = pos + 'px';
+              /* moving second span from top of the page to its absolute position */
+              wavey.style.top = pos +'px';
+              if(pos == -50){
+                document.getElementById("enter").style.display="block";
+              }
+
+              } 
+              }
+              
+              };
+
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>Contact</title>
+
+     
+     <!-- The Image in the tab bar -->
+    <link rel="icon" href="images/jumper2.ico" type="image/x-icon" />
+
+    <link rel="wavey" href="images/footer.png" type="image/x-icon">
+	     <!-- External CSS -->
+	   <link rel="stylesheet" href="external.css">
+	   <!-- Font Awesome is for fonts, which can be used as icons which I used for      the drop down icon in my nav bar -->
+	   <script src="https://use.fontawesome.com/2901339622.js"></script>
+ 
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+   	 <style type="text/css">
+   	
+      
+
+     .fa-arrow-circle-left{
+      transition-duration: 0.3s;
+     }
+     .fa-arrow-circle-left:hover{
+      transform: scale(1.2);
+       color: #215732;
+     }
+     input{
+      width: 480px;
+      height: 24px;
+      font-size: 20px;
+     }
+
+     body{
+      font-size: 22px;
+     }
+
+     #smooth{
+      transition-duration: 0.3s;
+     }
+     #smooth:hover{
+      transform: scale(1.2);
+     }
+     .wavey {
+          width:40%;
+         text-align: left;
+         font-size: 20px;
+          }
+
+        input:focus{
+        font-size:22px;
+        color: #C99700;
+        background-color: #215732;
+        outline: solid #cc0000;
+         }
+
+        button{
+         font-size: 18px; 
+        }
+        button:hover{
+        background: #215732;
+        outline: solid #cc0000;
+         color: #C99700;
+      }
+
+      #man:focus{
+        background: none;
+        outline: none;
+      }
+
+     	</style>
+
+	    </head>
+	     <body>
+ 	     <!-- Nav bar -->
+    <ul style="">
+       <li><a href="home.html" id="brand" style="margin-left: -40px"><b><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>     NOT A BROTHER?</b></a></li>
+        <li style="display: none;><a href="service.html">SERVICE</a></li>
+        <li style="display: none;><a href="events.html">EVENTS</a></li>
+        <li style="display: none;><a href="contact.html" class="active"><span style="color:#215732;">CONTACT</a></span></li>
+        <li style="display: none;><a href="rush.html">RUSH</a></li>
+        <li id="login" style="display: none;"><a href="brothers.html"><i id="brothersonly" class="fa fa-sign-in" aria-hidden="true"></i> BROTHERS ONLY</a></li>
+    </ul>
+
+      <!-- image in the middle -->
+      <img src="images/kappasigma.png" id="smooth" width="600px" height= "200px" style="position: absolute; left: 380px; top: 80px">
+
+    <!-- Form -->
+    <form style="width: 500px; height: 160px;position: relative; left: 500px;top: 220px;">
+
+      
+       
+          <span style="font-size:22px;">Email:<span>
+          <input type="email" class="form-control" placeholder="Enter Email" required="" width="500px"><br><br>
+       
+ 
+      
+        <span style="font-size:22px">Password:</span>
+          <input type="password" class="form-control" placeholder="Enter Password" required="">
+       
+      
+          
+          <input type="checkbox" id="man" style="position: relative;top: 36px; left: 130px;">Remember me</span><br>
+         
+          
+        
+          <button type="submit" onclick="alert('Down for maintence, Please come back later')">SIGN IN</button>
+      </form>
+    <!-- form ends -->
+
+
+
+
+   
+
+    <!-- This is where the body closes, therefore my presentation has come to an end, I hope you found it someway entertaining. As for the website I apologize on how it looks, I didn't have much time. -->
+</body>
+</html>

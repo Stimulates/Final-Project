@@ -1,0 +1,208 @@
+        
+        body, html{
+        width: 100%;
+        margin:0%;
+          }
+
+        body {
+        background-color: #FAEBD7;
+        font-family: Helvetica; /*just in case  */ 
+        font-family: 'Crimson Text', serif;
+        margin: 0px;
+        padding: 0px;
+     }
+
+/* Nav Bar beings here */
+        ul li{
+            display:inline;
+            list-style: none;
+        }
+        ul{
+            background-color: black;
+            margin: 0;
+            position: relative;
+
+        }
+        li a{
+            display:inline-block;
+            color:white;
+            text-align:center;
+            font-size: 20px;
+            padding:14px 16px 12px 10px;
+            margin-bottom: -2px;
+            text-decoration:none;
+            margin-top: -10px;
+        }
+        .dropdown{
+            display:inline-block;
+            margin-left: -1px;
+
+        }
+
+        li a:hover, .dropdown:hover{
+            color: #cc0000;
+
+        }
+
+
+        .content{
+            display:none;
+            position:absolute;
+            margin-top: 0px;
+            margin-left: 0px;
+            background-color: black;
+            background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+            box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+            .content a{ 
+            color: white;
+            padding: 10px 4px;
+            display: block;
+            text-align:left;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .dropdown:hover .content{
+            display:block;
+        }
+
+        #brand{
+            font-size: 30px;
+            margin-left: -40px;
+            color: #C99700;
+        }
+
+        #brand{
+            background: none;
+        }
+
+        .active{
+            text-decoration: underline;
+            color: #cc0000;
+            font-size: 20px;
+
+        }
+
+        #login{
+            float: right;
+            margin-top: 10px;
+
+        }
+
+        #brothersonly{
+            color: #C99700;
+        }
+
+        /* Nav Bar ends here*/
+
+
+
+/*Footer and inner footer begins here */
+        #footer {
+        background:black;
+        position:fixed; 
+        height:62px;
+        bottom:0px;
+        width:100%;
+        }
+
+        /* left side of the footer */
+        #copyright{
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 180px;
+        }
+
+        #copyright:hover{
+        color: #cc0000;
+        }
+
+        /* middle of the footer */
+        #contactfooter{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: absolute;
+            left: 47.2%;
+            top: 18px;
+        }
+
+        #contactfooter:hover {
+            color: #cc0000;
+        }
+
+        /* Social Media Part of the Footer (Right Side) */
+        #facebook{
+            color: white;
+            font-size: 36px;
+            position: absolute;
+            left: 82%;
+            top: 6px;
+        }
+
+        #facebook:hover {
+            color: #4060A5;
+        }
+
+        #instagram{
+            color: white;
+            font-size: 36px;
+            position: absolute;
+            left: 85%;
+            top: 6px;
+        }
+
+        #instagram:hover{
+            color:  #cd486b;
+        }
+
+        #twitter{
+            color: white;
+            font-size: 36px;
+            position: absolute;
+            left: 88%;
+            top: 6px;
+        }
+        #twitter:hover{
+            color: #00ABE3;
+             
+        }
+        #follow{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 71%;
+            top: 18px;
+        }
+        #follow:hover{
+        color: #cc0000;
+        }
+
+        #top{
+            text-decoration: none;
+            color: white;
+            transition-duration:0.6s;
+        }
+        #top:hover{
+            color: #215732;
+            transform: scale(1.2);
+        }
+        /*Social media*/
+        .fa-instagram, .fa-twitter-square,.fa-facebook-square{ 
+      transition-duration:0.6s;
+         }
+         .fa-instagram:hover{
+        transform: scale(1.2);
+        }
+        .fa-twitter-square:hover{
+         transform: scale(1.2);
+        }
+        .fa-facebook-square:hover{
+         transform: scale(1.2);
+        }
+
+
+/* External Style Sheet Finale */
